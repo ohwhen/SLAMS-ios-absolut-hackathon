@@ -4,23 +4,195 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="4">
             <objects>
-                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="2" customClass="StartViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="screen1.png" translatesAutoresizingMaskIntoConstraints="NO" id="rLC-DA-yAr"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZU-T1-Y2P">
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="144" id="R53-iK-R8m"/>
-                                    <constraint firstAttribute="width" constant="295" id="VcS-HX-v8W"/>
+                                    <constraint firstAttribute="height" constant="57" id="kR6-7q-3Ih"/>
+                                    <constraint firstAttribute="width" constant="90" id="yos-lZ-wtH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="Start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4aN-bs-pi3" kind="modal" modalTransitionStyle="crossDissolve" id="xzd-AS-ndN"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pYu-y8-5cO">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="252" id="Uas-dl-95a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MZU-T1-Y2P" secondAttribute="trailing" constant="241" id="1qz-lt-HjV"/>
+                            <constraint firstItem="rLC-DA-yAr" firstAttribute="leading" secondItem="5" secondAttribute="leading" type="default" id="3TE-6j-gVu"/>
+                            <constraint firstItem="pYu-y8-5cO" firstAttribute="centerX" secondItem="rLC-DA-yAr" secondAttribute="centerX" type="default" id="40a-5d-IS4"/>
+                            <constraint firstItem="pYu-y8-5cO" firstAttribute="top" secondItem="5" secondAttribute="top" constant="219" id="BDi-Gl-gDg"/>
+                            <constraint firstItem="MZU-T1-Y2P" firstAttribute="top" secondItem="5" secondAttribute="top" constant="205" id="Ou8-bc-phb"/>
+                            <constraint firstItem="rLC-DA-yAr" firstAttribute="top" secondItem="5" secondAttribute="top" type="default" id="sHK-wg-Zsi"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="buttonStart" destination="MZU-T1-Y2P" id="1Su-hG-Nmh"/>
+                        <outlet property="userName" destination="pYu-y8-5cO" id="2vc-ad-Yl8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-847" y="-199"/>
+        </scene>
+        <!--Slider Screen View Controller-->
+        <scene sceneID="k5g-PR-JpZ">
+            <objects>
+                <viewController id="4aN-bs-pi3" customClass="SliderScreenViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="04i-DO-eeM">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGE-JI-T60">
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="0bR-XZ-Mq5"/>
+                                    <constraint firstAttribute="width" constant="200" id="adO-FR-b2r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Generate Drink">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4bs-xQ-tot" kind="modal" modalTransitionStyle="crossDissolve" id="fJZ-H1-7uC"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="screen2.png" translatesAutoresizingMaskIntoConstraints="NO" id="77A-3c-TM0"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="77A-3c-TM0" firstAttribute="top" secondItem="04i-DO-eeM" secondAttribute="top" type="default" id="3VY-CB-MR2"/>
+                            <constraint firstAttribute="trailing" secondItem="EGE-JI-T60" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Lr7-WE-NL9"/>
+                            <constraint firstAttribute="bottom" secondItem="EGE-JI-T60" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="T3U-bk-6YH"/>
+                            <constraint firstItem="77A-3c-TM0" firstAttribute="leading" secondItem="04i-DO-eeM" secondAttribute="leading" type="default" id="y2e-58-ila"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="buttonStart" destination="EGE-JI-T60" id="zre-8J-Riz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ybM-b6-G6q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="286" y="-205"/>
+        </scene>
+        <!--Recipe View Controller-->
+        <scene sceneID="t36-wN-1bL">
+            <objects>
+                <viewController id="4bs-xQ-tot" customClass="RecipeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lxq-9H-Vqy">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="screen3.png" translatesAutoresizingMaskIntoConstraints="NO" id="PGK-YU-9dR"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFh-1Y-zsx">
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="esl-gG-Rrd"/>
+                                    <constraint firstAttribute="width" constant="101" id="x4Z-DV-cIY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rR6-5i-JuS" kind="modal" modalTransitionStyle="crossDissolve" id="Toe-e8-RWc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="xFh-1Y-zsx" secondAttribute="bottom" constant="189" id="CA7-Wz-FkZ"/>
+                            <constraint firstItem="xFh-1Y-zsx" firstAttribute="centerX" secondItem="PGK-YU-9dR" secondAttribute="centerX" type="default" id="UcY-Ie-C77"/>
+                            <constraint firstItem="PGK-YU-9dR" firstAttribute="leading" secondItem="lxq-9H-Vqy" secondAttribute="leading" type="default" id="fYF-da-CdC"/>
+                            <constraint firstItem="PGK-YU-9dR" firstAttribute="top" secondItem="lxq-9H-Vqy" secondAttribute="top" type="default" id="hLo-bp-IHQ"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Sc-hf-bGH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1434" y="-205"/>
+        </scene>
+        <!--Name Cocktail View Controller-->
+        <scene sceneID="Hqg-ZK-gzS">
+            <objects>
+                <viewController id="rR6-5i-JuS" customClass="NameCocktailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cML-pR-crs">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="screen4.png" translatesAutoresizingMaskIntoConstraints="NO" id="aej-wy-SqD"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s6L-5C-uob">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="eD6-vN-c3Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2F-Yb-DGH">
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="RnT-e4-4el"/>
+                                    <constraint firstAttribute="width" constant="140" id="Wse-OQ-39l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="START AGAIN">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2" kind="modal" identifier="startAgainSegue" modalTransitionStyle="crossDissolve" id="5if-Ng-ZEv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNf-TB-b5E">
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="0ZX-kP-Wgq"/>
+                                    <constraint firstAttribute="width" constant="140" id="jPR-TX-5r8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="MIX IT!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -29,35 +201,62 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="MZU-T1-Y2P" firstAttribute="centerX" secondItem="5" secondAttribute="centerX" type="default" id="AQL-PU-WsX"/>
-                            <constraint firstItem="MZU-T1-Y2P" firstAttribute="centerY" secondItem="5" secondAttribute="centerY" type="default" id="ufu-L4-eqJ"/>
+                            <constraint firstItem="s6L-5C-uob" firstAttribute="top" secondItem="cML-pR-crs" secondAttribute="top" constant="186" id="0jd-2j-tSR"/>
+                            <constraint firstItem="gNf-TB-b5E" firstAttribute="top" secondItem="cML-pR-crs" secondAttribute="top" constant="342" id="3hJ-Ge-vCa"/>
+                            <constraint firstAttribute="bottom" secondItem="d2F-Yb-DGH" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="64c-4U-Gip"/>
+                            <constraint firstItem="gNf-TB-b5E" firstAttribute="centerX" secondItem="s6L-5C-uob" secondAttribute="centerX" type="default" id="7kh-Xl-a8O"/>
+                            <constraint firstItem="aej-wy-SqD" firstAttribute="top" secondItem="cML-pR-crs" secondAttribute="top" type="default" id="7re-va-k1h"/>
+                            <constraint firstItem="d2F-Yb-DGH" firstAttribute="leading" secondItem="cML-pR-crs" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="8wE-9G-TaU"/>
+                            <constraint firstItem="gNf-TB-b5E" firstAttribute="centerX" secondItem="aej-wy-SqD" secondAttribute="centerX" type="default" id="Qe0-Ov-RC5"/>
+                            <constraint firstItem="aej-wy-SqD" firstAttribute="leading" secondItem="cML-pR-crs" secondAttribute="leading" type="default" id="VOC-c4-UvS"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <nil key="simulatedStatusBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="buttonMixIt" destination="gNf-TB-b5E" id="9mj-Ca-rlj"/>
+                        <outlet property="nameOfCocktail" destination="s6L-5C-uob" id="qdi-Kh-Dho"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Us7-2Z-VGC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-847" y="-199"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="k5g-PR-JpZ">
-            <objects>
-                <viewController id="4aN-bs-pi3" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="04i-DO-eeM">
-                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ybM-b6-G6q" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="280" y="-199"/>
+            <point key="canvasLocation" x="2560" y="-199"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="screen1.png" width="1024" height="768"/>
+        <image name="screen2.png" width="1024" height="768"/>
+        <image name="screen3.png" width="1024" height="768"/>
+        <image name="screen4.png" width="1024" height="768"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="NameCocktailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NameCocktailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="buttonMixIt" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="nameOfCocktail" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="RecipeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RecipeViewController.h"/>
+        </class>
+        <class className="SliderScreenViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SliderScreenViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="buttonStart" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="StartViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StartViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="buttonStart" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="userName" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

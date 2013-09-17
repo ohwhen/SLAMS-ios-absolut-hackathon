@@ -10,4 +10,7 @@
 
 @interface StartViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *buttonStart;
+@property (weak, nonatomic) IBOutlet UITextField *userName;
+
 @end

@@ -7,21 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36EBC3917F3AD0A7E7447563 /* CircleButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC9D2AE19370C24548EC8 /* CircleButtonView.m */; };
+		36EBCC129687F164E74A0238 /* background.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 36EBCDFC6EE3F6C743D2D903 /* background.mp4 */; };
+		36EBCDD676228949D8574487 /* VerticalUISlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC81E236C6AC5C9054EAE /* VerticalUISlider.m */; };
+		36EBCE4B1244BEEDC676BDDA /* SliderScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC9F5D9473481DF0FB8EF /* SliderScreenViewController.m */; };
+		CE02444A17E73C8100EA7AD6 /* screen4.png in Resources */ = {isa = PBXBuildFile; fileRef = CE02444917E73C8100EA7AD6 /* screen4.png */; };
+		CE699B8817E65A1C006A11D4 /* icon_limitless.png in Resources */ = {isa = PBXBuildFile; fileRef = CE699B8717E65A1C006A11D4 /* icon_limitless.png */; };
+		CE699B8A17E65B10006A11D4 /* icon_limitless@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE699B8917E65B10006A11D4 /* icon_limitless@2x.png */; };
+		CE699B8C17E65D11006A11D4 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = CE699B8B17E65D11006A11D4 /* Default-Landscape~ipad.png */; };
+		CE7FE15817E66638004FA72F /* limitless_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7FE15717E66638004FA72F /* limitless_logo.png */; };
+		CE7FE15A17E6F864004FA72F /* screen1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7FE15917E6F864004FA72F /* screen1.png */; };
+		CE7FE15C17E707DC004FA72F /* screen2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7FE15B17E707DC004FA72F /* screen2.png */; };
+		CE7FE15E17E70B4A004FA72F /* buttonCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7FE15D17E70B4A004FA72F /* buttonCircle.png */; };
 		CEF4AD9E17E6150900B7A681 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF4AD9D17E6150900B7A681 /* UIKit.framework */; };
 		CEF4ADA017E6150900B7A681 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF4AD9F17E6150900B7A681 /* Foundation.framework */; };
 		CEF4ADA217E6150900B7A681 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF4ADA117E6150900B7A681 /* CoreGraphics.framework */; };
 		CEF4ADA817E6150900B7A681 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEF4ADA617E6150900B7A681 /* InfoPlist.strings */; };
 		CEF4ADAA17E6150900B7A681 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4ADA917E6150900B7A681 /* main.m */; };
 		CEF4ADAE17E6150900B7A681 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4ADAD17E6150900B7A681 /* AppDelegate.m */; };
-		CEF4ADB017E6150900B7A681 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF4ADAF17E6150900B7A681 /* Default.png */; };
-		CEF4ADB217E6150900B7A681 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF4ADB117E6150900B7A681 /* Default@2x.png */; };
-		CEF4ADB417E6150900B7A681 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF4ADB317E6150900B7A681 /* Default-568h@2x.png */; };
 		CEF4ADB717E6150900B7A681 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF4ADB517E6150900B7A681 /* MainStoryboard.storyboard */; };
 		CEF4ADBA17E6150900B7A681 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4ADB917E6150900B7A681 /* StartViewController.m */; };
+		CEFE38EF17E62A30009EFCEA /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFE38DD17E62A30009EFCEA /* AFHTTPClient.m */; };
+		CEFE38F017E62A30009EFCEA /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFE38DF17E62A30009EFCEA /* AFHTTPRequestOperation.m */; };
+		CEFE38F117E62A30009EFCEA /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFE38E117E62A30009EFCEA /* AFImageRequestOperation.m */; };
+		CEFE38F217E62A30009EFCEA /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFE38E317E62A30009EFCEA /* AFJSONRequestOperation.m */; };
+		CEFE38F317E62A30009EFCEA /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFE38E517E62A30009EFCEA /* AFNetworkActivityIndicatorManager.m */; };
+		CEFE38F417E62A30009EFCEA /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFE38E817E62A30009EFCEA /* AFPropertyListRequestOperation.m */; };
+		CEFE38F517E62A30009EFCEA /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFE38EA17E62A30009EFCEA /* AFURLConnectionOperation.m */; };
+		CEFE38F617E62A30009EFCEA /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFE38EC17E62A30009EFCEA /* AFXMLRequestOperation.m */; };
+		CEFE38F717E62A30009EFCEA /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFE38EE17E62A30009EFCEA /* UIImageView+AFNetworking.m */; };
+		CEFE38F917E62B35009EFCEA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFE38F817E62B35009EFCEA /* SystemConfiguration.framework */; };
+		CEFE38FB17E62B3E009EFCEA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFE38FA17E62B3E009EFCEA /* MobileCoreServices.framework */; };
+		CEFE38FD17E62DEC009EFCEA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFE38FC17E62DEC009EFCEA /* CFNetwork.framework */; };
+		CEFE38FF17E62DF4009EFCEA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFE38FE17E62DF4009EFCEA /* Security.framework */; };
+		CEFE390217E63F04009EFCEA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFE390017E63F04009EFCEA /* CoreMedia.framework */; };
+		CEFE390317E63F04009EFCEA /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFE390117E63F04009EFCEA /* MediaPlayer.framework */; };
+		CEFEE75B17E739FB007267BD /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFEE75A17E739FB007267BD /* RecipeViewController.m */; };
+		CEFEE75D17E73A60007267BD /* screen3.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFEE75C17E73A60007267BD /* screen3.png */; };
+		CEFEE76017E73B43007267BD /* NameCocktailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFEE75F17E73B43007267BD /* NameCocktailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CEF4AD9A17E6150900B7A681 /* ABSOLUT Limitless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ABSOLUT Limitless.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36EBC5FE839A5AD21E0CB88D /* SliderScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderScreenViewController.h; sourceTree = "<group>"; };
+		36EBC81E236C6AC5C9054EAE /* VerticalUISlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalUISlider.m; sourceTree = "<group>"; };
+		36EBC9D2AE19370C24548EC8 /* CircleButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleButtonView.m; sourceTree = "<group>"; };
+		36EBC9F5D9473481DF0FB8EF /* SliderScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderScreenViewController.m; sourceTree = "<group>"; };
+		36EBCAB9539102679CE53803 /* CircleButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleButtonView.h; sourceTree = "<group>"; };
+		36EBCB5D2F1E8FF23E4B3345 /* VerticalUISlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalUISlider.h; sourceTree = "<group>"; };
+		36EBCDFC6EE3F6C743D2D903 /* background.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file.mp4; path = background.mp4; sourceTree = "<group>"; };
+		CE02444917E73C8100EA7AD6 /* screen4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen4.png; sourceTree = "<group>"; };
+		CE699B8717E65A1C006A11D4 /* icon_limitless.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_limitless.png; sourceTree = "<group>"; };
+		CE699B8917E65B10006A11D4 /* icon_limitless@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_limitless@2x.png"; sourceTree = "<group>"; };
+		CE699B8B17E65D11006A11D4 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		CE7FE15717E66638004FA72F /* limitless_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = limitless_logo.png; sourceTree = "<group>"; };
+		CE7FE15917E6F864004FA72F /* screen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen1.png; sourceTree = "<group>"; };
+		CE7FE15B17E707DC004FA72F /* screen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen2.png; sourceTree = "<group>"; };
+		CE7FE15D17E70B4A004FA72F /* buttonCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonCircle.png; sourceTree = "<group>"; };
+		CEF4AD9A17E6150900B7A681 /* Limitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Limitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF4AD9D17E6150900B7A681 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEF4AD9F17E6150900B7A681 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CEF4ADA117E6150900B7A681 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -31,12 +73,39 @@
 		CEF4ADAB17E6150900B7A681 /* ABSOLUT Limitless-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ABSOLUT Limitless-Prefix.pch"; sourceTree = "<group>"; };
 		CEF4ADAC17E6150900B7A681 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEF4ADAD17E6150900B7A681 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CEF4ADAF17E6150900B7A681 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		CEF4ADB117E6150900B7A681 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		CEF4ADB317E6150900B7A681 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CEF4ADB617E6150900B7A681 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		CEF4ADB817E6150900B7A681 /* StartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		CEF4ADB917E6150900B7A681 /* StartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		CEFE38DC17E62A30009EFCEA /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		CEFE38DD17E62A30009EFCEA /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		CEFE38DE17E62A30009EFCEA /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		CEFE38DF17E62A30009EFCEA /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		CEFE38E017E62A30009EFCEA /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		CEFE38E117E62A30009EFCEA /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		CEFE38E217E62A30009EFCEA /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		CEFE38E317E62A30009EFCEA /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		CEFE38E417E62A30009EFCEA /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		CEFE38E517E62A30009EFCEA /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		CEFE38E617E62A30009EFCEA /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		CEFE38E717E62A30009EFCEA /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		CEFE38E817E62A30009EFCEA /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		CEFE38E917E62A30009EFCEA /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		CEFE38EA17E62A30009EFCEA /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		CEFE38EB17E62A30009EFCEA /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		CEFE38EC17E62A30009EFCEA /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		CEFE38ED17E62A30009EFCEA /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		CEFE38EE17E62A30009EFCEA /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		CEFE38F817E62B35009EFCEA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CEFE38FA17E62B3E009EFCEA /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		CEFE38FC17E62DEC009EFCEA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CEFE38FE17E62DF4009EFCEA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CEFE390017E63F04009EFCEA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		CEFE390117E63F04009EFCEA /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		CEFEE75917E739FB007267BD /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
+		CEFEE75A17E739FB007267BD /* RecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeViewController.m; sourceTree = "<group>"; };
+		CEFEE75C17E73A60007267BD /* screen3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen3.png; sourceTree = "<group>"; };
+		CEFEE75E17E73B43007267BD /* NameCocktailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameCocktailViewController.h; sourceTree = "<group>"; };
+		CEFEE75F17E73B43007267BD /* NameCocktailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameCocktailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +113,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFE390217E63F04009EFCEA /* CoreMedia.framework in Frameworks */,
+				CEFE390317E63F04009EFCEA /* MediaPlayer.framework in Frameworks */,
+				CEFE38FF17E62DF4009EFCEA /* Security.framework in Frameworks */,
+				CEFE38FD17E62DEC009EFCEA /* CFNetwork.framework in Frameworks */,
+				CEFE38FB17E62B3E009EFCEA /* MobileCoreServices.framework in Frameworks */,
+				CEFE38F917E62B35009EFCEA /* SystemConfiguration.framework in Frameworks */,
 				CEF4AD9E17E6150900B7A681 /* UIKit.framework in Frameworks */,
 				CEF4ADA017E6150900B7A681 /* Foundation.framework in Frameworks */,
 				CEF4ADA217E6150900B7A681 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +131,9 @@
 		CEF4AD9117E6150900B7A681 = {
 			isa = PBXGroup;
 			children = (
+				CE699B8B17E65D11006A11D4 /* Default-Landscape~ipad.png */,
+				CE699B8917E65B10006A11D4 /* icon_limitless@2x.png */,
+				CE699B8717E65A1C006A11D4 /* icon_limitless.png */,
 				CEF4ADA317E6150900B7A681 /* ABSOLUT Limitless */,
 				CEF4AD9C17E6150900B7A681 /* Frameworks */,
 				CEF4AD9B17E6150900B7A681 /* Products */,
@@ -65,7 +143,7 @@
 		CEF4AD9B17E6150900B7A681 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEF4AD9A17E6150900B7A681 /* ABSOLUT Limitless.app */,
+				CEF4AD9A17E6150900B7A681 /* Limitness.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +151,12 @@
 		CEF4AD9C17E6150900B7A681 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEFE390017E63F04009EFCEA /* CoreMedia.framework */,
+				CEFE390117E63F04009EFCEA /* MediaPlayer.framework */,
+				CEFE38FE17E62DF4009EFCEA /* Security.framework */,
+				CEFE38FC17E62DEC009EFCEA /* CFNetwork.framework */,
+				CEFE38F817E62B35009EFCEA /* SystemConfiguration.framework */,
+				CEFE38FA17E62B3E009EFCEA /* MobileCoreServices.framework */,
 				CEF4AD9D17E6150900B7A681 /* UIKit.framework */,
 				CEF4AD9F17E6150900B7A681 /* Foundation.framework */,
 				CEF4ADA117E6150900B7A681 /* CoreGraphics.framework */,
@@ -83,12 +167,30 @@
 		CEF4ADA317E6150900B7A681 /* ABSOLUT Limitless */ = {
 			isa = PBXGroup;
 			children = (
+				CE02444917E73C8100EA7AD6 /* screen4.png */,
+				CEFEE75C17E73A60007267BD /* screen3.png */,
+				CE7FE15D17E70B4A004FA72F /* buttonCircle.png */,
+				CE7FE15B17E707DC004FA72F /* screen2.png */,
+				CE7FE15917E6F864004FA72F /* screen1.png */,
+				CE7FE15717E66638004FA72F /* limitless_logo.png */,
+				CEFE38DB17E62A30009EFCEA /* AFNetworking */,
 				CEF4ADAC17E6150900B7A681 /* AppDelegate.h */,
 				CEF4ADAD17E6150900B7A681 /* AppDelegate.m */,
 				CEF4ADB517E6150900B7A681 /* MainStoryboard.storyboard */,
 				CEF4ADB817E6150900B7A681 /* StartViewController.h */,
 				CEF4ADB917E6150900B7A681 /* StartViewController.m */,
 				CEF4ADA417E6150900B7A681 /* Supporting Files */,
+				36EBC9F5D9473481DF0FB8EF /* SliderScreenViewController.m */,
+				36EBC5FE839A5AD21E0CB88D /* SliderScreenViewController.h */,
+				36EBCB5D2F1E8FF23E4B3345 /* VerticalUISlider.h */,
+				36EBC81E236C6AC5C9054EAE /* VerticalUISlider.m */,
+				36EBCDFC6EE3F6C743D2D903 /* background.mp4 */,
+				36EBCAB9539102679CE53803 /* CircleButtonView.h */,
+				36EBC9D2AE19370C24548EC8 /* CircleButtonView.m */,
+				CEFEE75917E739FB007267BD /* RecipeViewController.h */,
+				CEFEE75A17E739FB007267BD /* RecipeViewController.m */,
+				CEFEE75E17E73B43007267BD /* NameCocktailViewController.h */,
+				CEFEE75F17E73B43007267BD /* NameCocktailViewController.m */,
 			);
 			path = "ABSOLUT Limitless";
 			sourceTree = "<group>";
@@ -100,11 +202,34 @@
 				CEF4ADA617E6150900B7A681 /* InfoPlist.strings */,
 				CEF4ADA917E6150900B7A681 /* main.m */,
 				CEF4ADAB17E6150900B7A681 /* ABSOLUT Limitless-Prefix.pch */,
-				CEF4ADAF17E6150900B7A681 /* Default.png */,
-				CEF4ADB117E6150900B7A681 /* Default@2x.png */,
-				CEF4ADB317E6150900B7A681 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEFE38DB17E62A30009EFCEA /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				CEFE38DC17E62A30009EFCEA /* AFHTTPClient.h */,
+				CEFE38DD17E62A30009EFCEA /* AFHTTPClient.m */,
+				CEFE38DE17E62A30009EFCEA /* AFHTTPRequestOperation.h */,
+				CEFE38DF17E62A30009EFCEA /* AFHTTPRequestOperation.m */,
+				CEFE38E017E62A30009EFCEA /* AFImageRequestOperation.h */,
+				CEFE38E117E62A30009EFCEA /* AFImageRequestOperation.m */,
+				CEFE38E217E62A30009EFCEA /* AFJSONRequestOperation.h */,
+				CEFE38E317E62A30009EFCEA /* AFJSONRequestOperation.m */,
+				CEFE38E417E62A30009EFCEA /* AFNetworkActivityIndicatorManager.h */,
+				CEFE38E517E62A30009EFCEA /* AFNetworkActivityIndicatorManager.m */,
+				CEFE38E617E62A30009EFCEA /* AFNetworking.h */,
+				CEFE38E717E62A30009EFCEA /* AFPropertyListRequestOperation.h */,
+				CEFE38E817E62A30009EFCEA /* AFPropertyListRequestOperation.m */,
+				CEFE38E917E62A30009EFCEA /* AFURLConnectionOperation.h */,
+				CEFE38EA17E62A30009EFCEA /* AFURLConnectionOperation.m */,
+				CEFE38EB17E62A30009EFCEA /* AFXMLRequestOperation.h */,
+				CEFE38EC17E62A30009EFCEA /* AFXMLRequestOperation.m */,
+				CEFE38ED17E62A30009EFCEA /* UIImageView+AFNetworking.h */,
+				CEFE38EE17E62A30009EFCEA /* UIImageView+AFNetworking.m */,
+			);
+			path = AFNetworking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +249,7 @@
 			);
 			name = "ABSOLUT Limitless";
 			productName = "ABSOLUT Limitless";
-			productReference = CEF4AD9A17E6150900B7A681 /* ABSOLUT Limitless.app */;
+			productReference = CEF4AD9A17E6150900B7A681 /* Limitness.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -159,10 +284,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF4ADA817E6150900B7A681 /* InfoPlist.strings in Resources */,
-				CEF4ADB017E6150900B7A681 /* Default.png in Resources */,
-				CEF4ADB217E6150900B7A681 /* Default@2x.png in Resources */,
-				CEF4ADB417E6150900B7A681 /* Default-568h@2x.png in Resources */,
 				CEF4ADB717E6150900B7A681 /* MainStoryboard.storyboard in Resources */,
+				CE699B8817E65A1C006A11D4 /* icon_limitless.png in Resources */,
+				CE699B8A17E65B10006A11D4 /* icon_limitless@2x.png in Resources */,
+				CE699B8C17E65D11006A11D4 /* Default-Landscape~ipad.png in Resources */,
+				36EBCC129687F164E74A0238 /* background.mp4 in Resources */,
+				CE7FE15817E66638004FA72F /* limitless_logo.png in Resources */,
+				CE7FE15A17E6F864004FA72F /* screen1.png in Resources */,
+				CE7FE15C17E707DC004FA72F /* screen2.png in Resources */,
+				CE7FE15E17E70B4A004FA72F /* buttonCircle.png in Resources */,
+				CEFEE75D17E73A60007267BD /* screen3.png in Resources */,
+				CE02444A17E73C8100EA7AD6 /* screen4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +308,20 @@
 				CEF4ADAA17E6150900B7A681 /* main.m in Sources */,
 				CEF4ADAE17E6150900B7A681 /* AppDelegate.m in Sources */,
 				CEF4ADBA17E6150900B7A681 /* StartViewController.m in Sources */,
+				36EBCE4B1244BEEDC676BDDA /* SliderScreenViewController.m in Sources */,
+				36EBCDD676228949D8574487 /* VerticalUISlider.m in Sources */,
+				CEFE38EF17E62A30009EFCEA /* AFHTTPClient.m in Sources */,
+				CEFE38F017E62A30009EFCEA /* AFHTTPRequestOperation.m in Sources */,
+				CEFE38F117E62A30009EFCEA /* AFImageRequestOperation.m in Sources */,
+				CEFE38F217E62A30009EFCEA /* AFJSONRequestOperation.m in Sources */,
+				CEFE38F317E62A30009EFCEA /* AFNetworkActivityIndicatorManager.m in Sources */,
+				CEFE38F417E62A30009EFCEA /* AFPropertyListRequestOperation.m in Sources */,
+				CEFE38F517E62A30009EFCEA /* AFURLConnectionOperation.m in Sources */,
+				CEFE38F617E62A30009EFCEA /* AFXMLRequestOperation.m in Sources */,
+				CEFE38F717E62A30009EFCEA /* UIImageView+AFNetworking.m in Sources */,
+				36EBC3917F3AD0A7E7447563 /* CircleButtonView.m in Sources */,
+				CEFEE75B17E739FB007267BD /* RecipeViewController.m in Sources */,
+				CEFEE76017E73B43007267BD /* NameCocktailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,10 +408,14 @@
 		CEF4ADBE17E6150900B7A681 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Owen van Dijk (U6WM95RPZU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Owen van Dijk (U6WM95RPZU)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ABSOLUT Limitless/ABSOLUT Limitless-Prefix.pch";
 				INFOPLIST_FILE = "ABSOLUT Limitless/ABSOLUT Limitless-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Limitness;
+				PROVISIONING_PROFILE = "E3A607F2-3940-439B-AE84-CDA814CDF1BE";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E3A607F2-3940-439B-AE84-CDA814CDF1BE";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -273,10 +423,14 @@
 		CEF4ADBF17E6150900B7A681 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Owen van Dijk (U6WM95RPZU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Owen van Dijk (U6WM95RPZU)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ABSOLUT Limitless/ABSOLUT Limitless-Prefix.pch";
 				INFOPLIST_FILE = "ABSOLUT Limitless/ABSOLUT Limitless-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Limitness;
+				PROVISIONING_PROFILE = "E3A607F2-3940-439B-AE84-CDA814CDF1BE";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E3A607F2-3940-439B-AE84-CDA814CDF1BE";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -300,6 +454,7 @@
 				CEF4ADBF17E6150900B7A681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

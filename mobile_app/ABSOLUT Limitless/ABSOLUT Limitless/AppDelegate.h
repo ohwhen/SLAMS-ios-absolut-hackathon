@@ -12,4 +12,8 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property (strong, nonatomic) NSString *userName;
+@property (strong, nonatomic) NSNumber *userId;
+@property (strong, nonatomic) NSString *recipeId;
+
 @end
